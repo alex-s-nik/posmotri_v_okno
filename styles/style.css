@@ -51,6 +51,7 @@ ol {
 }
 
 .result__video-container {
+  position: relative;
   width: 711px;
   height: 386px;
   padding-bottom: 16px;
@@ -70,11 +71,12 @@ ol {
 }
 
 .content__list {
-  height: 300px;
-  overflow: overlay;
+  position: relative;
   display: flex;
   flex-direction: column;
   row-gap: 30px;
+  height: 300px;
+  overflow: overlay;
 }
 
 .content__details {
@@ -97,4 +99,8 @@ ol {
 
 .content__video-card-description-container {
   flex-grow: 1;
+}
+
+.result__video {
+  display: block;
 }
