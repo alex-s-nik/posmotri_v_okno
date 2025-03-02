@@ -126,7 +126,7 @@ ol {
   border-right: none;
   border-left: none;
   color: #fff;
-  font-family: 'Fira Sans Condensed', sans;
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: transparent;
   appearance: none;
@@ -165,7 +165,7 @@ ol {
   padding-top: 6px;
   padding-bottom: 6px;
   color: #fff;
-  font-family: 'Fira Sans Condensed', sans;
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-weight: bold;
   font-size: 18px;
   background-color: transparent;
