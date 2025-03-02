@@ -269,6 +269,8 @@ ol {
 .content__video-card-thumbnail {
   width: 194px;
   height: 103px;
+  object-fit: cover;
+  object-position: center;
 }
 
 .content__video-card-description-container {
