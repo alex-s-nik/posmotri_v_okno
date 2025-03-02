@@ -105,8 +105,19 @@ ol {
 
 .search-form__label {
   display: flex;
+  align-items: center;
   gap: 5px;
   cursor: pointer;
+}
+
+/* при наведении на лейбл применять подчеркивание текста только у чекбоксов */
+.search-form__label:has(> .search-form__checkbox):hover {
+  text-decoration: underline;
+}
+
+.search-form__label:has(:focus-visible) {
+  outline: #fff 1px solid;
+  outline-offset: 1px;
 }
 
 .search-form__textfield{
@@ -125,11 +136,27 @@ ol {
   border-radius: 0;
 }
 
+.search-form__textfield:focus {
+  outline: none;
+}
+
 .search-form__pseudo-checkbox {
-  display: block;
+  position: relative;
+  display: inline-block;
   width: 19px;
   height: 19px;
   border: #fff 1px solid;
+}
+
+.search-form__checkbox:checked + .search-form__pseudo-checkbox::before {
+  content: '';
+  position: relative;
+  top: 1px;
+  left: 1px;
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
 }
 
 .button {
@@ -142,12 +169,29 @@ ol {
   font-weight: bold;
   font-size: 18px;
   background-color: transparent;
+  cursor: pointer;
   appearance: none;
+}
+
+.button:hover {
+  text-decoration: underline;
+}
+
+.button:active {
+  background-color: #545050;
+}
+
+.button:focus {
+  appearance: none;
+}
+
+.button:focus-visible {
+  outline: #fff 1px solid;
+  outline-offset: 1px;
 }
 
 .search-form__submit-button {
   align-self: flex-end;
-
 }
 
 .more-button {
