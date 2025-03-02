@@ -182,7 +182,7 @@ ol {
 }
 
 .button:focus {
-  appearance: none;
+  outline: none;
 }
 
 .button:focus-visible {
@@ -192,9 +192,6 @@ ol {
 
 .search-form__submit-button {
   align-self: flex-end;
-}
-
-.more-button {
 }
 
 .content__details {
@@ -223,8 +220,27 @@ ol {
 }
 
 .content__card-link {
+  display: block;
   color: #fff;
   text-decoration: none;
+}
+
+.content__card-link:focus {
+  outline: none;
+}
+
+.content__card-link:focus-visible {
+  margin: 2px;
+  outline: #fff 1px solid;
+  outline-offset: 1px;
+}
+
+.content__card-link:hover {
+  text-decoration: underline;
+}
+
+.content__card-link_current {
+  background-color: #545050;
 }
 
 .content__video-card {
