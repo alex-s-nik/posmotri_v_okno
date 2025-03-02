@@ -215,9 +215,16 @@ ol {
   position: relative;
   display: flex;
   flex-direction: column;
-  row-gap: 30px;
   height: 300px;
   overflow: overlay;
+}
+
+.content__list-item {
+  padding-bottom: 30px;
+}
+
+.content__list-item:nth-last-child(1) {
+  padding-bottom: 0;
 }
 
 .content__card-link {
